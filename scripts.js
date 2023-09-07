@@ -8,23 +8,29 @@ function addTheValues(param1, param2){
     if(isNaN(param1) || isNaN(param2)){
         addToPage("One of the parameters is not a number, and when added they are equal" + param + " " + param2);
     }else{
-
+        addToPage("Both of the parameters are numbers, and when added they equal: " + (param1 + param2);
     }
 }
 
 // call the function a few times with different parameters
-// TO DO
+addTheValues(5, 5);
+addTheValues("hi", 5);
+addTheValues(5,"hi");
+addTheValues("Prof.", "Barnett");
 
 // let's talk about scope and see it in action
 // function with a local variable to display to the screen
-// TO DO
+Fuction scopeExample(){
+    let localVariable = "This is a local variable inside of the scopeExamples() fuvtion";
+    addToPage(localVariable);
+}
 
 // do functions execute when you don't call them?
-// TO DO
+scopeExample();
 
 // this won't work because this variable does not exist outside of the scopeExample function
 // try to access that local variable from the previous function
-// TO DO
+// addToPage(localVariable) 
 
 
 // let's create a global score variable
